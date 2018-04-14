@@ -2,7 +2,7 @@
 
 Precisa de um arquivo `template.svg` e um arquivo `certificados.csv`
 
-É necessário ter o `cairo` e o `ImageMagick` instalados
+É necessário ter a fonte [Cooper Hewitt](https://www.fontsquirrel.com/fonts/cooper-hewitt), o `cairo` e o `ImageMagick` instalados
 
 ## Uso:
 dentro da pasta que possui o template: `python ../generator.py`
