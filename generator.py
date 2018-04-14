@@ -53,8 +53,8 @@ template = fromfile(TEMPLATE)
 width, wunit = re.findall('([\d\.]+)(.*)', template.width)[0]
 height, hunit = re.findall('([\d\.]+)(.*)', template.height)[0]
 
-y = 1075
-x = 2490
+y = 1155
+x = 2202
 
 with open('certificados.csv', 'r', encoding='utf-8') as csvfile:
     iterador = iter(csv.reader(csvfile, delimiter=','))
@@ -79,18 +79,18 @@ for i, (nome, matricula) in enumerate(nomes):
             x, y - 60, "{}".format(nome),
             size=130,
             anchor="middle",
-            font="Flux",
+            font="Cooper Hewitt",
             weight="bold",
-            color="#306a98",
+            color="#000000",
             letterspacing=0
         ))
         template.append(Text(
             x, y + 50, "(Matrícula: {})".format(matricula),
             size=100,
             anchor="middle",
-            font="Flux",
+            font="Cooper Hewitt",
             weight="bold",
-            color="#306a98",
+            color="#000000",
             letterspacing=0
         ))
     else:
@@ -98,9 +98,9 @@ for i, (nome, matricula) in enumerate(nomes):
             x, y, nome,
             size=150.6,
             anchor="middle",
-            font="Flux",
+            font="Cooper Hewitt",
             weight="bold",
-            color="#306a98",
+            color="#000000",
             letterspacing=0
         ))
 
